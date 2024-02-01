@@ -1,0 +1,59 @@
+.about_first_container{
+    display: flex;
+    padding: 10px 0px;
+}
+
+.about_con_item{
+    width: 50%;
+}
+
+.about_details_container{
+    margin-top: 1px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.nav-link{
+    color: blue;
+    background-color: white;
+}
+
+.about_img{
+    padding-right: 15px;
+}
+
+.about_details{
+    padding-left: 15px;
+}
+
+.about_benefits_container{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+}
+
+.tab-pane{
+    display: none;
+}
+.active{
+    display: block;
+}
+
+.about_icon{
+    height: 35px !important;
+    width: 35px !important;
+}
+
+.about_item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_item_img{
+    display: flex;
+    align-items: center;
+}
+

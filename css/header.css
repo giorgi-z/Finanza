@@ -3,22 +3,23 @@ header{
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background-attachment: fixed;
 }
 
 .topbar_container{
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px;
+    padding: 10px 0px;
 }
 
 .topbar_item_container{
-    display: flex;
-    justify-content: space-between;
+    min-width: 35%;
+    margin: 0px 10px;
 }
 
 .topbar_list_item{
     display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .header_container{
@@ -33,6 +34,7 @@ header{
 
 .header_nav-menu{
     display: flex;
+    justify-content: space-between;
 }
 
 .header_nav-link{
@@ -45,6 +47,10 @@ header{
 
 .header_nav-link:hover{
     font-weight: 700;
+}
+
+.header_navigation{
+    width: 50%;
 }
 
 .header-text-box {
