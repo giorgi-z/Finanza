@@ -1,0 +1,28 @@
+.btn-list {
+  list-style: none;
+  width: 35.5rem;
+  height: 39.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-list-item {
+  border: 1px solid black;
+  max-width: 35.5rem;
+  max-height: 7.2rem;
+  border-radius: 1rem;
+  background-color: wheat;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+.burger-btn {
+  max-width: 3.6rem;
+  margin-right: 1.5rem;
+}

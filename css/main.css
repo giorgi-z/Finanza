@@ -1,74 +1,125 @@
-*{
-    font-family: 'Mulish', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    outline:none;
-    text-decoration: none;
-    border:none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Mulish', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height:30px;
-    color:#7D7987;
-    margin: 0;
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
-img{
-    max-width: 100%;
-    object-fit: cover;
-    height: auto;
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
 }
 
-h1{
-    color: #000000;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
 }
 
-.title{
-    color: #000000;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 56px;
-    margin: 0;
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  /* margin-bottom: 9.6rem; */
 }
 
-.subtitle{
-    color: #000000;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 56px;
-    margin: 0;
+/* .grid:last-child {
+    margin-bottom: 0;
+  } */
+/* 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+} */
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-/* button */
-
-.btn__link{
-    display: inline-block;
-    color: #fff;
-    background:#458FF6;
-    border: 1px solid #458FF6;
-    border-radius: 40px;
-    transition: background .2s, opacity .2s;
-    padding: 15px 40px;
-    font-weight: 700;
-
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.btn__link:hover{
-    background:#fff;
-    color: #458FF6;
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.container{
-    margin: 0 auto;
-    width: 1200px;
-    padding: 0 10px;
-    max-width: 100%;
+.grid--center-v {
+  align-items: center;
+}
+
+/**************************/
+/* BUTTON */
+/**************************/
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  background-color: #0000ff;
+  color: #fff;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #0000cc;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+
+  /* border: 3px solid #fff; */
+
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+/**************************/
+/* HELPER/SETTINGS CLASSES */
+/**************************/
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
 }

@@ -1,0 +1,95 @@
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  color: #fff;
+}
+
+.footer-links {
+  align-items: start;
+  background-color: #011a41;
+}
+
+.footer-links-item {
+  max-height: 33rem;
+  padding: 2rem 0;
+}
+
+.copyright {
+  background-color: #000000;
+  max-height: 8.8rem;
+}
+
+.copyright-item {
+  max-height: 8.8rem;
+  padding: 2rem 0;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #0000ff;
+}
+
+.footer-arrow-img {
+  max-width: 1rem;
+}
+
+.footer-info-img {
+  max-width: 1.6rem;
+}
+
+.newsletter-text {
+  margin-bottom: 2rem;
+}
+
+.footer-sign-up {
+  max-width: 26rem;
+  padding: 1rem 0.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.footer-sign-up-input {
+  border: none;
+}
+
+.footer-sign-up-btn {
+  display: inline-block;
+  width: 7.3rem;
+  height: 3.7rem;
+  background-color: #0066cc;
+  color: #fff;
+  border-radius: 1rem;
+  border-style: none;
+}
+
+.footer-sign-up input {
+  max-width: 15rem;
+}
+
+.copyright-item a {
+  color: #fff;
+  font-size: 1rem;
+}

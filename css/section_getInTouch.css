@@ -1,0 +1,94 @@
+.git-main-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -15rem;
+}
+.section-git {
+  max-height: 58.9rem;
+}
+.get-in-touch {
+  max-width: 72rem;
+  max-height: 59rem;
+  min-height: 40rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  padding: 2rem 4rem;
+  background-color: #fff;
+}
+.git-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.git-span {
+  padding: 0.4rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: #355efc;
+  margin: 0.5rem 0;
+}
+
+.git-header h2 {
+  margin: 0.5rem 0 2rem 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0em;
+}
+
+.form {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 25% 25% auto 25%;
+  padding: 0 0 2.5rem 0;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.git-msg-text {
+  grid-column: 1/-1;
+}
+
+.form-item {
+  max-width: 61.9rem;
+  max-height: 5.2rem;
+  padding: 0;
+}
+
+.git-form-btn {
+  display: block !important;
+  width: 100%;
+}
+
+.git-img {
+  display: flex;
+  max-width: 120rem;
+  justify-content: center;
+}

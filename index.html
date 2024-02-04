@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finanza</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,133 +18,592 @@
     <link rel="stylesheet" href="css/section_getInTouch.css" />
     <link rel="stylesheet" href="css/section_ourServices.css" />
     <link rel="stylesheet" href="css/section_whyChoosingUs.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="topbar_container">
-            <div class="topbar_item_container">
-                <ul class="topbar_list_item">
-                    <li class=""><a class="" href="#"><i class=""></i>123 Street, New York, USA</a></li>
-                    <li><a class="" href="#"><i class=""></i>9.00 am - 9.00 pm</a></li>
-                </ul>
-            </div>
-            <div class="topbar_item_container">
-                <ul class="topbar_list_item">
-                    <li class=""><a class="" href="mailto:info@example.com "><i class=""></i>info@example.com </li></a>
-                    <li><a class="" href="tel:+012 345 6789"><i class=""></i>+012 345 6789</a></li>
-                </ul>
-            </div>
+      <div class="topbar">
+        <div class="topbar-item">
+          <ul class="topbar-list">
+            <li>
+              <img
+                class="topbar-img margin-right-sm"
+                alt="Location icon"
+                src="icons/location.png"
+              />
+              <a class="topbar-link" href="#"
+                ><i class=""></i>123 Street, New York, USA</a
+              >
+            </li>
+            <li>
+              <img
+                class="topbar-img margin-right-sm"
+                alt="Clock icon"
+                src="icons/time.png"
+              />
+              <a class="topbar-link" href="#"
+                ><i class=""></i>9.00 am - 9.00 pm</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="header_container container">
-            <div class="navbar-brand">
-                <div><a class="" href="#">Finanza</a></div>
-            </div>
-            <nav class="header_navigation" id="navbarNav">
-                <ul class="header_nav-menu">
-                    <li class="header_nav-list"><a class="nav-link pe-3 active" href="#">Home</a></li>
-                    <li class="header_nav-list"><a class="nav-link pe-3" href="#">About</a></li>
-                    <li class="header_nav-list"><a class="nav-link pe-3" href="#">Services</a></li>
-                    <li class="header_nav-list"><a class="nav-link dropdown-toggle pe-3" href="#" data-bs-toggle="dropdown">Pages</a>
-                        <!-- <ol class="dropdown-menu">
+        <div class="topbar-item">
+          <ul class="topbar-list">
+            <li>
+              <img
+                class="topbar-img margin-right-sm"
+                alt="Mail icon"
+                src="icons/mail.png"
+              />
+              <a class="topbar-link" href="mailto:info@example.com "
+                ><i class=""></i>info@example.com</a
+              >
+            </li>
+            <li>
+              <img
+                class="topbar-img margin-right-sm"
+                alt="Phone icon"
+                src="icons/phone.png"
+              />
+              <a class="topbar-link" href="tel:+012 345 6789"
+                ><i class=""></i>+012 345 6789</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header">
+        <a href="#">
+          <img class="logo" alt="Finanza logo" src="img/logo.svg" />
+        </a>
+        <nav class="main-nav" id="navbarNav">
+          <div class="main-nav-list-container">
+            <ul class="main-nav-list">
+              <li><a class="main-nav-link" href="#">Home</a></li>
+              <li><a class="main-nav-link" href="#">About</a></li>
+              <li><a class="main-nav-link" href="#">Services</a></li>
+              <li>
+                <a class="main-nav-link" href="#" data-bs-toggle="dropdown"
+                  >Pages</a
+                >
+                <!-- <ol class="dropdown-menu">
                             <li><a class="" href="#">Projects</a></li>
                         </ol> -->
-                    </li>
-                    <li class="header_nav-list"><a class="" href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+              </li>
+              <li><a class="main-nav-link" href="#">Contact</a></li>
+            </ul>
+            <ul class="main-nav-list-social">
+              <li>
+                <a href="#">
+                  <img
+                    class="main-nav-social-img"
+                    alt="Facebook icon"
+                    src="icons/nav-facebook.svg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="main-nav-social-img"
+                    alt="Facebook icon"
+                    src="icons/nav-twitter.svg"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="main-nav-social-img"
+                    alt="Facebook icon"
+                    src="icons/nav-linkedin.svg"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
-     <!-- banner section -->
-     <section class="header-text-box">
+    <main>
+      <!-- banner section -->
+      <section class="container header-text-box">
         <div class="" bs-data-ride="carousel" id="fadecarousel">
-            <p class="">Welcome to Finanza</p>
-            <h1 class="">Your Financial <br>Status Is Our Goal</h1>
-            <button class="btn__link">explore more</button>
+          <span class="git-span">Welcome to Finanza</span>
+          <h1 class="home-header">Your Financial <br />Status Is Our Goal</h1>
+          <button class="btn btn--full">explore more</button>
         </div>
-    </section>
-     <!-- about section -->
-     <section class="">
+      </section>
+      <!-- about section -->
+      <section class="">
         <div class="container">
-            <div class="about_first_container">
-                <div class="about_con_item about_img">
-                    <img class="img-fluid rounded" src="img/about.jpg" alt="">
-                </div>
-                <div class="about_con_item">
-                    <p class="">About Us</p>
-                    <h2 class="">We Help Our Clients To<br> Grow Their Business</h2>
-                    <p class="">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <div class="about_details_container">
-                        <ul class="topbar_list_item" id="">
-                            <li class="">
-                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#story-tab">Story</button>
-                            </li>
-                            <li>
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#mission-tab">Mission</button>
-                            </li>
-                            <li>
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#vision-tab">Vision</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane fade active show" id="story-tab">
-                                <p class="pt-3">
-                                    Story erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.</p>
-                                <p>Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
-                            </div>
-                            <div class="tab-pane fade" id="mission-tab">
-                                <p class="pt-3">Mission erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.</p>
-                                <p>Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
-                            </div>
-                            <div class="tab-pane fade" id="vision-tab">
-                                <p class="pt-3">Vision erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.</p>
-                                <p>Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="about-first-container">
+            <div class="about_con_item about-img">
+              <img class="about-img" src="/img/about-us-img.png" alt="Person photo" />
             </div>
-            <div class="about_first_container">
-                <div class="about_benefits_container">
-                    <div class="about_benefits_item">
-                        <div class="about_item">
-                            <div class="about_item_img">
-                                <img class="about_icon" src="/icons/close.svg" alt="close">
-                            </div>
-                            <div>
-                                <h3 class="">No Hidden Cost</h3>
-                                <p class="">Clita erat ipsum lorem sit sed stet duo justo</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=""></div>
-                    <div class="about_benefits_item">
-                        <div class="about_item">
-                            <div class="about_item_img">
-                                <img class="about_icon" src="/icons/users.svg" alt="users">
-                            </div>
-                            <div>
-                                <h3 class="">Dedicated Team</h3>
-                                <p class="">Clita erat ipsum lorem sit sed stet duo justo</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=""></div>
-                    <div class="about_benefits_item">
-                        <div class="about_item">
-                            <div class="about_item_img">
-                                <img class="about_icon" src="/icons/phone.svg" alt="phone">
-                            </div>
-                            <div>
-                                <h3 class="">24/7 Available</h3>
-                                <p class="">Clita erat ipsum lorem sit sed stet duo justo</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="about_con_item">
+              <span class="git-span">About Us</span>
+              <h2 class="about-header">
+                We Help Our Clients To<br />
+                Grow Their Business
+              </h2>
+              <p class="about-p">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                sed stet lorem sit clita duo justo magna dolore erat amet
+              </p>
+              <div class="about-details">
+                <ul class="about-btns" id="">
+                  <li class="">
+                    <button
+                      class="about-btn active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#story-tab"
+                    >
+                      Story
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="about-btn"
+                      data-bs-toggle="tab"
+                      data-bs-target="#mission-tab"
+                    >
+                      Mission
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="about-btn"
+                      data-bs-toggle="tab"
+                      data-bs-target="#vision-tab"
+                    >
+                      Vision
+                    </button>
+                  </li>
+                </ul>
+                <div class="">
+                  <div class="tab-pane active" id="story-tab">
+                    <p class="about-p">
+                      Story erat elitr rebum at clita. Diam dolor diam ipsum et
+                      tempor sit. Aliqu diam amet diam et eos labore.
+                    </p>
+                    <p class="about-p">
+                      Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam
+                      et eos labore. Clita erat ipsum et lorem et sit
+                    </p>
+                  </div>
+                  <div class="tab-pane" id="mission-tab">
+                    <p class="about-p">
+                      Mission erat elitr rebum at clita. Diam dolor diam ipsum
+                      et tempor sit. Aliqu diam amet diam et eos labore.
+                    </p>
+                    <p class="about-p">
+                      Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam
+                      et eos labore. Clita erat ipsum et lorem et sit
+                    </p>
+                  </div>
+                  <div class="tab-pane" id="vision-tab">
+                    <p class="about-p">
+                      Vision erat elitr rebum at clita. Diam dolor diam ipsum et
+                      tempor sit. Aliqu diam amet diam et eos labore.
+                    </p>
+                    <p class="about-p">
+                      Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam
+                      et eos labore. Clita erat ipsum et lorem et sit
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-first-container">
+            <div class="about_benefits_container">
+              <div class="about_benefits_item">
+                <div class="about-item">
+                  <div class="about-item-img">
+                    <img
+                      class="about-icon"
+                      src="/icons/close.svg"
+                      alt="close"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="about-benefit-header">No Hidden Cost</h3>
+                    <p class="">
+                      Clita erat ipsum lorem sit sed stet duo justo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=""></div>
+              <div class="about_benefits_item">
+                <div class="about-item">
+                  <div class="about-item-img">
+                    <img
+                      class="about-icon"
+                      src="/icons/users.svg"
+                      alt="users"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="about-benefit-header">Dedicated Team</h3>
+                    <p class="">
+                      Clita erat ipsum lorem sit sed stet duo justo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=""></div>
+              <div class="about_benefits_item">
+                <div class="about-item">
+                  <div class="about-item-img">
+                    <img
+                      class="about-icon"
+                      src="/icons/phone.svg"
+                      alt="phone"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="about-benefit-header">24/7 Available</h3>
+                    <p class="">
+                      Clita erat ipsum lorem sit sed stet duo justo
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-services">
+        <div class="container">
+            <div>
+                <p>Our Services</p>
+                <h2>Awesome Financial Services For Business</h2>
+            </div>
+            <div>
+                <div>
+                    <ul class="btn-list">
+                        <li class="btn-list-item">
+                            <img
+                            class="burger-btn margin-right-sm"
+                            alt="Button icon"
+                            src="/icons/burger-icon-disabled.svg"
+                            />
+                            <About class="">Financial Planing</button>
+                        </li>
+                        <li class="btn-list-item">
+                            <img
+                            class="burger-btn margin-right-sm"
+                            alt="Button icon"
+                            src="/icons/burger-icon-disabled.svg"
+                            />
+                            <About class="">Financial Planing</button>
+                        </li>
+                        <li class="btn-list-item">
+                            <img
+                            class="burger-btn margin-right-sm"
+                            alt="Button icon"
+                            src="/icons/burger-icon-disabled.svg"
+                            />
+                            <About class="">Financial Planing</button>
+                        </li>
+                        <li class="btn-list-item">
+                            <img
+                            class="burger-btn margin-right-sm"
+                            alt="Button icon"
+                            src="/icons/burger-icon-disabled.svg"
+                            />
+                            <About class="">Financial Planing</button>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    
                 </div>
             </div>
         </div>
-    </section>
-</body>
+      </section>
+      <section class="container section-git">
+        <div>
+            <div> 
+                <img
+                  class="git-img"
+                  alt="Blue color image"
+                  src="img/contact-form-backend.png"
+                />
+            </div>
+        </div>
+        <div class="git-main-container">
+        <div class="get-in-touch">
+            <div class="git-header">
+                <span class="git-span">Get In Touch</span>
+                <h2>Request A Call-Back</h2>
+            </div>
+          <div class="">
+          <div class="form">
+            <div class="form-item">
+              <input
+                type="text"
+                class="form-control py-3"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="form-item">
+              <input
+                type="email"
+                class="form-control py-3"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-item">
+              <input
+                type="tel"
+                class="form-control py-3"
+                placeholder="Your Mobile"
+              />
+            </div>
+            <div class="form-item">
+              <input
+                type="text"
+                class="form-control py-3"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="form-item git-msg-text">
+              <textarea
+                class="form-control"
+                rows="3"
+                placeholder="Massage"
+              ></textarea>
+            </div>
+          </div>
+            <button class="btn git-form-btn py-3">
+              Submit Now
+            </button>
+          </div>
+        </div>
+        </div>
+        </div>
+      </section>
+    </div>
+    </main>
+    <footer class="footer">
+      <div class="container grid grid--4-cols footer-links">
+        <div class="footer-links-item office-col">
+          <div>
+            <p class="footer-heading">Our Office</p>
+            <ul class="footer-nav">
+              <li>
+                <img
+                  class="footer-info-img margin-right-sm"
+                  alt="Location icon"
+                  src="icons/footer-location.svg"
+                />
+                <a class="footer-link" href="#"
+                  ><i class=""></i>123 Street, New York, USA</a
+                >
+              </li>
+              <li>
+                <img
+                  class="footer-info-img margin-right-sm"
+                  alt="Phone icon"
+                  src="icons/footer-phone.svg"
+                />
+                <a class="footer-link" href="#"
+                  ><i class=""></i>+012 345 67890</a
+                >
+              </li>
+              <li>
+                <img
+                  class="footer-info-img margin-right-sm"
+                  alt="Arrow icon"
+                  src="icons/footer-mail.svg"
+                />
+                <a class="footer-link" href="#"
+                  ><i class=""></i>info@example.com</a
+                >
+              </li>
+              <li>
+                <ul class="main-nav-list-social">
+                  <li>
+                    <a href="#">
+                      <img
+                        class="main-nav-social-img"
+                        alt="Facebook icon"
+                        src="icons/footer-twitter.png"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        class="main-nav-social-img"
+                        alt="Facebook icon"
+                        src="icons/footer-video.png"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        class="main-nav-social-img"
+                        alt="Facebook icon"
+                        src="icons/footer-facebook.png"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        class="main-nav-social-img"
+                        alt="Facebook icon"
+                        src="icons/footer-linkedin.png"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-links-item services-col">
+          <div>
+            <p class="footer-heading">Services</p>
+            <ul class="footer-nav">
+              <li>
+                <img
+                  class="footer-arrow-img margin-right-sm"
+                  alt="Arrow icon"
+                  src="icons/footer-arrow.svg"
+                />
+                <a class="footer-link" href="#"
+                  ><i class=""></i>Financial Planning</a
+                >
+              </li>
+              <li>
+                <img
+                  class="footer-arrow-img margin-right-sm"
+                  alt="Arrow icon"
+                  src="icons/footer-arrow.svg"
+                />
+                <a class="footer-link" href="#"
+                  ><i class=""></i>Cash Investment</a
+                >
+              </li>
+              <li>
+                <img
+                  class="footer-arrow-img margin-right-sm"
+                  alt="Arrow icon"
+                  src="icons/footer-arrow.svg"
+                />
+                <a class="footer-link" href="#"
+                  ><i class=""></i>Financial Consultancy</a
+                >
+              </li>
+              <li>
+                <img
+                  class="footer-arrow-img margin-right-sm"
+                  alt="Arrow icon"
+                  src="icons/footer-arrow.svg"
+                />
+                <a class="footer-link" href="#"
+                  ><i class=""></i>Business Loans</a
+                >
+              </li>
+              <li>
+                <img
+                  class="footer-arrow-img margin-right-sm"
+                  alt="Arrow icon"
+                  src="icons/footer-arrow.svg"
+                />
+                <a class="footer-link" href="#"
+                  ><i class=""></i>Business Analysis</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-links-item quick-links-col">
+          <div>
+            <p class="footer-heading">Quick Links</p>
+            <ul class="footer-nav">
+              <li>
+                <img
+                  class="footer-arrow-img margin-right-sm"
+                  alt="Arrow icon"
+                  src="icons/footer-arrow.svg"
+                />
+                <a class="footer-link" href="#"><i class=""></i>About Us</a>
+              </li>
+              <li>
+                <img
+                  class="footer-arrow-img margin-right-sm"
+                  alt="Arrow icon"
+                  src="icons/footer-arrow.svg"
+                />
+                <a class="footer-link" href="#"><i class=""></i>Contact Us</a>
+              </li>
+              <li>
+                <img
+                  class="footer-arrow-img margin-right-sm"
+                  alt="Arrow icon"
+                  src="icons/footer-arrow.svg"
+                />
+                <a class="footer-link" href="#"><i class=""></i>Our services</a>
+              </li>
+              <li>
+                <img
+                  class="footer-arrow-img margin-right-sm"
+                  alt="Arrow icon"
+                  src="icons/footer-arrow.svg"
+                />
+                <a class="footer-link" href="#"
+                  ><i class=""></i>Terms & Condition</a
+                >
+              </li>
+              <li>
+                <img
+                  class="footer-arrow-img margin-right-sm"
+                  alt="Arrow icon"
+                  src="icons/footer-arrow.svg"
+                />
+                <a class="footer-link" href="#"><i class=""></i>Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-links-item newsletter-col">
+          <div>
+            <p class="footer-heading">Newsletter</p>
+            <ul>
+              <p class="newsletter-text">
+                Dolor amet sit justo amet elitr clita<br />
+                ipsum elitr est.
+              </p>
+              <div class="footer-sign-up">
+                <input
+                  class="footer-sign-up-input"
+                  type="text"
+                  placeholder="YourEmail"
+                />
+                <button class="footer-sign-up-btn">SignUp</button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container grid grid--2-cols copyright">
+        <div class="copyright-item">
+          <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+        </div>
+        <div class="copyright-item">
+          <p>
+            Redesigned By <a href="#">saikat mondal</a> and Designed By HTML
+            Codex
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
