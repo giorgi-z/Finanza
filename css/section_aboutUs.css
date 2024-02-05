@@ -27,8 +27,10 @@
 .about_benefits_container {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
-  padding: 10px;
+  text-align: center;
+  border: 1px solid #909DE2;
+  border-radius: 2.5rem;
+  padding: 0.5rem;
   width: 100%;
 }
 
@@ -62,7 +64,7 @@
 .about-item-img {
   display: flex;
   align-items: center;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .about-header {
@@ -122,4 +124,13 @@
   line-height: 2.9rem;
   letter-spacing: 0em;
   text-align: left;
+}
+
+
+.about-benefit-p{
+font-size: 1.6rem;
+font-weight: 500;
+line-height: 2.4rem;
+letter-spacing: 0em;
+text-align: left;
 }
