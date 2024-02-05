@@ -11,9 +11,17 @@ header {
 
 .topbar {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 0 1rem;
+  border-bottom:1px solid black;
+}
+.topbar-container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3.5rem 0 1rem;
+  width: 144rem;
 }
 
 .topbar-item {
@@ -26,6 +34,16 @@ header {
   display: flex;
   align-items: center;
   gap: 4.8rem;
+}
+
+.topbar-list-contact{
+  display: flex;
+  justify-content: end;
+}
+
+.topbar-list-location{
+  display: flex;
+  justify-content: start;
 }
 
 .topbar-link {

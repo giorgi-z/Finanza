@@ -38,7 +38,7 @@
 .active {
   display: block;
   border-top: 0.5px solid gray;
-  border-radius: 0.8rem 0.8rem 0 0;
+  /* border-radius: 0.8rem 0.8rem 0 0; */
   border-bottom: none;
   color: var(--main-color);
 }
@@ -53,6 +53,10 @@
   justify-content: space-between;
   border-right: 1px solid black;
   padding-right: 2rem;
+}
+
+.about-item.no-border {
+  border: none;
 }
 
 .about-item-img {
@@ -90,15 +94,22 @@
   min-width: 10rem;
   max-height: 3.5rem;
   margin-top: 4rem;
+  padding: 0 0.4rem;
   background-color: white;
-  border: none;
-  border-bottom: 0.5px solid gray;
+  border:  none;
   font-family: Poppins;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
+}
+.about-btn.active {
+  border:  0.5px solid gray;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-bottom: none;
+  position: relative;
+  top: 0.1rem;
 }
 
 .about-img {
