@@ -1,0 +1,41 @@
+.wcu-items-container {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: center;
+}
+
+.wcu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.wcu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  max-width: 25.8rem;
+  border: 1px solid #909de2;
+  border-radius: 2.5rem;
+  padding: 2rem;
+}
+
+.wcu-img {
+  max-width: 4.3rem;
+}
+
+.wcu-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.wcu-p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
