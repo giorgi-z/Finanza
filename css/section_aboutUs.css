@@ -26,9 +26,10 @@
 
 .about_benefits_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3rem;
   text-align: center;
-  border: 1px solid #909DE2;
+  border: 1px solid #909de2;
   border-radius: 2.5rem;
   padding: 0.5rem;
   width: 100%;
@@ -54,7 +55,7 @@
   display: flex;
   justify-content: space-between;
   border-right: 1px solid black;
-  padding-right: 2rem;
+  padding-right: 4rem;
 }
 
 .about-item.no-border {
@@ -98,7 +99,7 @@
   margin-top: 4rem;
   padding: 0 0.4rem;
   background-color: white;
-  border:  none;
+  border: none;
   font-family: Poppins;
   font-size: 1.6rem;
   font-weight: 400;
@@ -107,7 +108,7 @@
   text-align: center;
 }
 .about-btn.active {
-  border:  0.5px solid gray;
+  border: 0.5px solid gray;
   border-radius: 0.5rem 0.5rem 0 0;
   border-bottom: none;
   position: relative;
@@ -126,11 +127,50 @@
   text-align: left;
 }
 
+.about-benefit-p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
-.about-benefit-p{
-font-size: 1.6rem;
-font-weight: 500;
-line-height: 2.4rem;
-letter-spacing: 0em;
-text-align: left;
+.analytics {
+  color: #fff;
+  background-color: #355efc;
+  margin: 3rem 0;
+  padding: 5rem 0;
+  padding-inline: 12rem;
+}
+
+.analytics-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.analytics-item hr {
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.analytics-heading {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 6.7rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.analytics-p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.analytics-img {
+  max-width: 4.8rem;
 }
