@@ -39,3 +39,7 @@
   letter-spacing: 0em;
   text-align: left;
 }
+.wcu-second-container {
+  display: flex;
+  align-items: center;
+}

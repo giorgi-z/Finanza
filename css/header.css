@@ -1,20 +1,27 @@
-header {
+/* header {
   background-image: url(/img/carousel-1.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
-}
+} */
 
 /**************************/
 /* TOPBAR */
 /**************************/
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
 
 .topbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3.5rem 0 1rem;
-  border-bottom:1px solid black;
+  padding: 2rem 0 1rem;
+  border-bottom: 1px solid black;
 }
 .topbar-container {
   display: flex;
@@ -30,24 +37,19 @@ header {
 }
 
 .topbar-list {
-  list-style: none;
   display: flex;
   align-items: center;
   gap: 4.8rem;
 }
 
-.topbar-list-contact{
+.topbar-list-contact {
   display: flex;
   justify-content: end;
 }
 
-.topbar-list-location{
+.topbar-list-location {
   display: flex;
   justify-content: start;
-}
-
-.topbar-link {
-  text-decoration: none;
 }
 
 .topbar-img {
@@ -55,7 +57,6 @@ header {
 }
 
 .topbar-list li {
-  list-style: none;
   display: flex;
   align-items: center;
 }
@@ -63,11 +64,11 @@ header {
 /**************************/
 /* NAVIGATION */
 /**************************/
-.header {
+.header-navigation {
+  align-items: center;
+  text-align: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 2rem 6rem;
 }
 
 .main-nav-list-container {
@@ -113,13 +114,27 @@ header {
 }
 
 .header-text-box {
-  position: absolute;
+  background-image: url(/img/carousel-1.jpg);
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+
+  /* position: absolute;
   top: 60%;
   left: 30%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
-
+.header-text-box-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 13rem !important;
+}
 .home-header {
   font-size: 8rem;
   font-weight: 700;
