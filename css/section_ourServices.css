@@ -52,7 +52,7 @@
   align-items: center;
   border: 1px solid rgba(144, 157, 226, 1);
   border-radius: 1rem;
-  padding: 2rem 6rem 2rem 4rem;
+  padding: 2rem 5.5rem 2rem 3rem;
   cursor: pointer;
 }
 
@@ -132,5 +132,5 @@
 }
 
 .os-third-col {
-  padding-left: 3rem;
+  padding-left: 5rem;
 }
