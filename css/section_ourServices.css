@@ -21,6 +21,8 @@
   justify-content: center;
   align-items: center;
   padding-top: 6rem !important;
+  max-width: 45%;
+  margin-inline: auto;
 }
 
 .os-heading {
@@ -30,6 +32,7 @@
   line-height: 5.8rem;
   letter-spacing: 0em;
   text-align: center;
+  margin: 1rem 3rem 4rem;
 }
 
 .btn-list {
@@ -39,7 +42,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 3rem;
+  align-items: center;
+  gap: 4rem;
 }
 
 .btn-list-item {
@@ -52,7 +56,7 @@
   align-items: center;
   border: 1px solid rgba(144, 157, 226, 1);
   border-radius: 1rem;
-  padding: 2rem 5.5rem 2rem 3rem;
+  padding: 3rem 5.5rem 3rem 3rem;
   cursor: pointer;
 }
 
@@ -80,7 +84,7 @@
   line-height: 3.4rem;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .os-experience-p {
@@ -97,8 +101,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
-  margin: 2rem 0;
+  gap: 1.5rem;
+  margin: 3rem 0;
 }
 
 .os-experience-list-item {

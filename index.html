@@ -85,17 +85,10 @@
             <div class="main-nav-list-container">
               <ul class="main-nav-list">
                 <li><a class="main-nav-link" href="#">Home</a></li>
-                <li><a class="main-nav-link" href="#">About</a></li>
-                <li><a class="main-nav-link" href="#">Services</a></li>
-                <li>
-                  <a class="main-nav-link" href="#" data-bs-toggle="dropdown"
-                    >Pages</a
-                  >
-                  <!-- <ol class="dropdown-menu">
-                            <li><a class="" href="#">Projects</a></li>
-                        </ol> -->
-                </li>
-                <li><a class="main-nav-link" href="#">Contact</a></li>
+                <li><a class="main-nav-link" href="#about-us">About</a></li>
+                <li><a class="main-nav-link" href="#our-services">Services</a></li>
+                <li><a class="main-nav-link" href="#pages">Pages</a></li>
+                <li><a class="main-nav-link" href="#contact">Contact</a></li>
               </ul>
               <ul class="main-nav-list-social">
                 <li>
@@ -135,15 +128,14 @@
       <!-- banner section -->
       <section class="header-text-box">
         <div class="header-text-box-container container">
-          <div class="" id="fadecarousel">
-            <span class="git-span">Welcome to Finanza</span>
+          <div class="">
+            <span class="home-git-span">Welcome to Finanza</span>
             <h1 class="home-header">Your Financial <br />Status Is Our Goal</h1>
             <button class="btn btn--full">explore more</button>
           </div>
         </div>
       </section>
-      <!-- about section -->
-    <section class="about">
+    <section class="about" id="about-us">
         <div class="container">
           <div class="about-first-container">
             <div class="about_con_item about-img">
@@ -151,7 +143,7 @@
             </div>
             <div class="about_con_item">
               <span class="git-span">About Us</span>
-              <h2 class="about-header">
+              <h2 class="about-header hidden">
                 We Help Our Clients To<br />
                 Grow Their Business
               </h2>
@@ -307,12 +299,12 @@
         </div>
         </div>
       </section>
-      <section>
+      <section id="wcu">
         <div class="container">
             <div class="wcu-main-container">
             <div class="wcu-first-container">
                 <span class="git-span">Why Choosing Us!</span>
-                <h2 class="wcu-main-heading">Few Reasons Why People Choosing Us!</h2>
+                <h2 class="wcu-main-heading hidden">Few Reasons Why People Choosing Us!</h2>
                 <p class="wcu-main-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere   possimus nesciunt repudiandae.
                     Nostrum illo iste fugiat explicabo eius, officiis sint doloremque ducimus sit. Maiores libero, omnis
                     placeat officia quae commodi!</p>
@@ -345,11 +337,11 @@
         </div>
         </div>
       </section>
-      <section class="our-services">
+      <section class="our-services" id="our-services">
         <div class="container">
             <div class="os-heading-container">
                 <span class="git-span">Our Services</span>
-                <h2 class="os-heading">Awesome Financial Services For Business</h2>
+                <h2 class="os-heading hidden">Awesome Financial Services For Business</h2>
             </div>
             <div class="os-second-container">
                 <div class="os-second-container-item">
@@ -358,7 +350,8 @@
                       <img
                             class="burger-btn margin-right-sm"
                             alt="Button icon"
-                            src="/icons/burger-icon-disabled.svg"
+                            src="/icons/burger-icon-active.svg"
+                            id="btn1-img"
                             />
                       <span class="btn-txt">Financial Planing</span>
                     </div>
@@ -367,6 +360,7 @@
                             class="burger-btn margin-right-sm"
                             alt="Button icon"
                             src="/icons/burger-icon-disabled.svg"
+                            id="btn2-img"
                             />
                       <span class="btn-txt">Financial Planing</span>
                     </div>
@@ -375,6 +369,7 @@
                             class="burger-btn margin-right-sm"
                             alt="Button icon"
                             src="/icons/burger-icon-disabled.svg"
+                            id="btn3-img"
                             />
                       <span class="btn-txt">Financial Planing</span>
                     </div>
@@ -383,6 +378,7 @@
                             class="burger-btn margin-right-sm"
                             alt="Button icon"
                             src="/icons/burger-icon-disabled.svg"
+                            id="btn4-img"
                             />
                       <span class="btn-txt">Financial Planing</span>
                     </div>
@@ -398,7 +394,7 @@
                 </div>
                 <div class="os-second-container-item">
                   <div class="os-third-col">
-                    <h2 class="os-experience-heading">25 Years Of Experience In Financial Support</h2>
+                    <h2 class="os-experience-heading hidden">25 Years Of Experience In Financial Support</h2>
                     <p class="os-experience-p">
                       Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
                        Clita erat ipsum et lorem et sit, sed stet 
@@ -435,7 +431,7 @@
             </div>
         </div>
       </section>
-      <section class="container section-git">
+      <section class="container section-git" id="contact">
         <div>
             <div> 
                 <img
@@ -449,7 +445,7 @@
         <div class="get-in-touch">
             <div class="git-header">
                 <span class="git-span">Get In Touch</span>
-                <h2>Request A Call-Back</h2>
+                <h2 class="hidden">Request A Call-Back</h2>
             </div>
           <div class="">
           <div class="form">
@@ -458,6 +454,7 @@
                 type="text"
                 class="form-control py-3"
                 placeholder="Your Name"
+                required
               />
             </div>
             <div class="form-item">
@@ -465,6 +462,7 @@
                 type="email"
                 class="form-control py-3"
                 placeholder="Your Email"
+                required
               />
             </div>
             <div class="form-item">
@@ -472,6 +470,7 @@
                 type="tel"
                 class="form-control py-3"
                 placeholder="Your Mobile"
+                required
               />
             </div>
             <div class="form-item">
@@ -479,6 +478,7 @@
                 type="text"
                 class="form-control py-3"
                 placeholder="Subject"
+                required
               />
             </div>
             <div class="form-item git-msg-text">
@@ -489,7 +489,7 @@
               ></textarea>
             </div>
           </div>
-            <button class="btn git-form-btn py-3">
+            <button type="submit" class="btn git-form-btn py-3">
               Submit Now
             </button>
           </div>
@@ -499,7 +499,7 @@
       </section>
     </div> 
     </main>
-    <footer class="footer">
+    <footer class="footer" id="pages">
       <div class="container grid grid--4-cols footer-links">
         <div class="footer-links-item office-col">
           <div>

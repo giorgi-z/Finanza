@@ -30,6 +30,7 @@
   font-size: 1.6rem;
   color: #355efc;
   margin: 0.5rem 0;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(65, 64, 64, 0.09);
 }
 
 .git-header h2 {
