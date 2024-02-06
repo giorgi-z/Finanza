@@ -1,9 +1,10 @@
 .wcu-main-container {
   display: flex;
-  gap: 1.8rem;
+  gap: 3rem;
   justify-content: center;
   margin-inline: auto;
   max-width: 80%;
+  margin-top: 6rem;
 }
 
 .wcu-first-container {
@@ -11,6 +12,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
+  gap: 3rem;
 }
 
 .wcu-main-heading {
