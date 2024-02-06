@@ -1,28 +1,136 @@
+.os-second-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0px;
+  /* gap: 2rem; */
+  margin-bottom: 6rem;
+}
+
+.os-second-container-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 33%;
+}
+
+.os-heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem !important;
+}
+
+.os-heading {
+  font-family: Jost;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 .btn-list {
   list-style: none;
-  width: 35.5rem;
-  height: 39.3rem;
+  max-width: 35.5rem;
+  max-height: 39.3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 3rem;
 }
 
 .btn-list-item {
-  border: 1px solid black;
   max-width: 35.5rem;
   max-height: 7.2rem;
-  border-radius: 1rem;
-  background-color: wheat;
+  /* background-color: wheat;
   font-size: 2rem;
-  line-height: 2.4rem;
+  line-height: 2.4rem; */
   display: flex;
   align-items: center;
-  border: 1px solid gray;
-  padding-left: 2rem;
-  padding-bottom: 1rem;
+  border: 1px solid rgba(144, 157, 226, 1);
+  border-radius: 1rem;
+  padding: 2rem 6rem 2rem 4rem;
+  cursor: pointer;
 }
 
 .burger-btn {
   max-width: 3.6rem;
   margin-right: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-txt {
+  font-family: Open Sans;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.os-experience-heading {
+  font-family: Jost;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.os-experience-p {
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.os-experience-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.os-experience-list-item {
+  max-width: 35.5rem;
+  max-height: 7.2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+.os-experience-p {
+  font-family: Poppins;
+  color: rgba(85, 85, 85, 1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.os-active-btn {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(53, 94, 252, 1);
+}
+
+.os-mid-img {
+  width: 100%;
+  /* height: 100%; */
+  min-height: 43.5rem;
+}
+
+.os-third-col {
+  padding-left: 3rem;
 }

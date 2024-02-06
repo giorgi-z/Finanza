@@ -42,3 +42,48 @@ function showVision() {
   mission.classList.remove("active");
   missionParagraph.classList.remove("active");
 }
+
+// our services
+
+const first_btn = document.getElementById("os-btn1");
+const second_btn = document.getElementById("os-btn2");
+const third_btn = document.getElementById("os-btn3");
+const fourth_btn = document.getElementById("os-btn4");
+const os_image = document.getElementById("os-img");
+
+first_btn.addEventListener("click", showFirstOutput);
+second_btn.addEventListener("click", showSecondOutput);
+third_btn.addEventListener("click", showThirdOutput);
+fourth_btn.addEventListener("click", showFourthOutput);
+
+function showFirstOutput() {
+  first_btn.classList.add("os-active-btn");
+  second_btn.classList.remove("os-active-btn");
+  third_btn.classList.remove("os-active-btn");
+  fourth_btn.classList.remove("os-active-btn");
+  os_image.src = "/img/os-main-img.png";
+}
+
+function showSecondOutput() {
+  second_btn.classList.add("os-active-btn");
+  first_btn.classList.remove("os-active-btn");
+  third_btn.classList.remove("os-active-btn");
+  fourth_btn.classList.remove("os-active-btn");
+  os_image.src = "/img/service-1.jpg";
+}
+
+function showThirdOutput() {
+  third_btn.classList.add("os-active-btn");
+  second_btn.classList.remove("os-active-btn");
+  first_btn.classList.remove("os-active-btn");
+  fourth_btn.classList.remove("os-active-btn");
+  os_image.src = "/img/service-2.jpg";
+}
+
+function showFourthOutput() {
+  fourth_btn.classList.add("os-active-btn");
+  second_btn.classList.remove("os-active-btn");
+  third_btn.classList.remove("os-active-btn");
+  first_btn.classList.remove("os-active-btn");
+  os_image.src = "/img/service-3.jpg";
+}
