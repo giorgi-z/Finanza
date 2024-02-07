@@ -164,3 +164,15 @@ document
       document.getElementById("git-form").submit();
     }
   });
+
+// explore more
+
+var exploreMoreBtn = document.getElementById("explore-more");
+var modal = document.getElementById("modal");
+
+exploreMoreBtn.addEventListener("click", activeModal);
+
+function activeModal() {
+  modal.classList.add("active-modal");
+  modal.classList.remove("inactive-modal");
+}

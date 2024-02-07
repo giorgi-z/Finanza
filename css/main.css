@@ -137,3 +137,20 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
+
+.modal {
+  left: 40%;
+  top: 300px;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+}
+
+.inactive-modal {
+  display: none;
+}
+
+.active-modal {
+  display: block;
+  position: absolute;
+}
