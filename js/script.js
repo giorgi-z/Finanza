@@ -63,26 +63,26 @@ fourth_btn.addEventListener("click", showFourthOutput);
 
 function showFirstOutput() {
   first_btn.classList.add("os-active-btn");
-  firstBtnImg.src = "/icons/burger-icon-active.svg";
+  firstBtnImg.src = "icons/burger-icon-active.svg";
 
-  secondBtnImg.src = "/icons/burger-icon-disabled.svg";
-  thirdBtnImg.src = "/icons/burger-icon-disabled.svg";
-  fourthBtnImg.src = "/icons/burger-icon-disabled.svg";
+  secondBtnImg.src = "icons/burger-icon-disabled.svg";
+  thirdBtnImg.src = "icons/burger-icon-disabled.svg";
+  fourthBtnImg.src = "icons/burger-icon-disabled.svg";
 
   second_btn.classList.remove("os-active-btn");
   third_btn.classList.remove("os-active-btn");
   fourth_btn.classList.remove("os-active-btn");
 
-  os_image.src = "/img/os-main-img.png";
+  os_image.src = "img/os-main-img.png";
 }
 
 function showSecondOutput() {
   second_btn.classList.add("os-active-btn");
-  secondBtnImg.src = "/icons/burger-icon-active.svg";
+  secondBtnImg.src = "icons/burger-icon-active.svg";
 
-  firstBtnImg.src = "/icons/burger-icon-disabled.svg";
-  thirdBtnImg.src = "/icons/burger-icon-disabled.svg";
-  fourthBtnImg.src = "/icons/burger-icon-disabled.svg";
+  firstBtnImg.src = "icons/burger-icon-disabled.svg";
+  thirdBtnImg.src = "icons/burger-icon-disabled.svg";
+  fourthBtnImg.src = "icons/burger-icon-disabled.svg";
 
   first_btn.classList.remove("os-active-btn");
   third_btn.classList.remove("os-active-btn");
@@ -93,32 +93,32 @@ function showSecondOutput() {
 
 function showThirdOutput() {
   third_btn.classList.add("os-active-btn");
-  thirdBtnImg.src = "/icons/burger-icon-active.svg";
+  thirdBtnImg.src = "icons/burger-icon-active.svg";
 
-  firstBtnImg.src = "/icons/burger-icon-disabled.svg";
-  secondBtnImg.src = "/icons/burger-icon-disabled.svg";
-  fourthBtnImg.src = "/icons/burger-icon-disabled.svg";
+  firstBtnImg.src = "icons/burger-icon-disabled.svg";
+  secondBtnImg.src = "icons/burger-icon-disabled.svg";
+  fourthBtnImg.src = "icons/burger-icon-disabled.svg";
 
   second_btn.classList.remove("os-active-btn");
   first_btn.classList.remove("os-active-btn");
   fourth_btn.classList.remove("os-active-btn");
 
-  os_image.src = "/img/service-2.jpg";
+  os_image.src = "img/service-2.jpg";
 }
 
 function showFourthOutput() {
   fourth_btn.classList.add("os-active-btn");
-  fourthBtnImg.src = "/icons/burger-icon-active.svg";
+  fourthBtnImg.src = "icons/burger-icon-active.svg";
 
-  firstBtnImg.src = "/icons/burger-icon-disabled.svg";
-  secondBtnImg.src = "/icons/burger-icon-disabled.svg";
-  thirdBtnImg.src = "/icons/burger-icon-disabled.svg";
+  firstBtnImg.src = "icons/burger-icon-disabled.svg";
+  secondBtnImg.src = "icons/burger-icon-disabled.svg";
+  thirdBtnImg.src = "icons/burger-icon-disabled.svg";
 
   second_btn.classList.remove("os-active-btn");
   third_btn.classList.remove("os-active-btn");
   first_btn.classList.remove("os-active-btn");
 
-  os_image.src = "/img/service-3.jpg";
+  os_image.src = "img/service-3.jpg";
 }
 
 // animation
@@ -148,8 +148,13 @@ function validateForm() {
     return false;
   }
 
-  if (password.trim() === "") {
-    alert("Please enter a password");
+  if (mail.trim() === "") {
+    alert("Please enter email");
+    return false;
+  }
+
+  if (subject.trim() === "") {
+    alert("Please enter subject");
     return false;
   }
 
