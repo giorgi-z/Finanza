@@ -170,9 +170,17 @@ document
 var exploreMoreBtn = document.getElementById("explore-more");
 var modal = document.getElementById("modal");
 
+var modalCloseBtn = document.getElementById("modal-close-btn");
+
 exploreMoreBtn.addEventListener("click", activeModal);
+modalCloseBtn.addEventListener("click", closeModal);
 
 function activeModal() {
   modal.classList.add("active-modal");
   modal.classList.remove("inactive-modal");
+}
+
+function closeModal() {
+  modal.classList.remove("active-modal");
+  modal.classList.add("inactive-modal");
 }

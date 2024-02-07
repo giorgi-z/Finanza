@@ -143,7 +143,15 @@ body {
   top: 300px;
   width: 500px;
   height: 300px;
-  background-color: white;
+  background-color: gray;
+}
+
+.modal-p {
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 10rem;
+  font-weight: 400;
 }
 
 .inactive-modal {
@@ -153,4 +161,9 @@ body {
 .active-modal {
   display: block;
   position: absolute;
+}
+
+.modal-cl-btn {
+  background-color: #fff;
+  color: black;
 }
