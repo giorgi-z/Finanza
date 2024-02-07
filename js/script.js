@@ -88,7 +88,7 @@ function showSecondOutput() {
   third_btn.classList.remove("os-active-btn");
   fourth_btn.classList.remove("os-active-btn");
 
-  os_image.src = "/img/service-1.jpg";
+  os_image.src = "img/service-1.jpg";
 }
 
 function showThirdOutput() {
