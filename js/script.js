@@ -135,3 +135,32 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+// submit btn
+
+function validateForm() {
+  var phoneNumber = document.getElementById("mobile").value;
+  var mail = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+
+  if (phoneNumber.trim() === "") {
+    alert("Please enter a phone number");
+    return false;
+  }
+
+  if (password.trim() === "") {
+    alert("Please enter a password");
+    return false;
+  }
+
+  return true;
+}
+
+document
+  .getElementById("submitButton")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    if (validateForm()) {
+      document.getElementById("git-form").submit();
+    }
+  });

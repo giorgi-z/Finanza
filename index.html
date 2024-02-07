@@ -447,13 +447,14 @@
                 <span class="git-span">Get In Touch</span>
                 <h2 class="hidden">Request A Call-Back</h2>
             </div>
-          <div class="">
+          <form id="git-form">
           <div class="form">
             <div class="form-item">
               <input
                 type="text"
                 class="form-control py-3"
                 placeholder="Your Name"
+                id="name"
                 required
               />
             </div>
@@ -462,6 +463,7 @@
                 type="email"
                 class="form-control py-3"
                 placeholder="Your Email"
+                id="email"
                 required
               />
             </div>
@@ -470,6 +472,7 @@
                 type="tel"
                 class="form-control py-3"
                 placeholder="Your Mobile"
+                id="mobile"
                 required
               />
             </div>
@@ -477,7 +480,8 @@
               <input
                 type="text"
                 class="form-control py-3"
-                placeholder="Subject"
+                placeholder="Your Subject"
+                id="subject"
                 required
               />
             </div>
@@ -489,10 +493,10 @@
               ></textarea>
             </div>
           </div>
-            <button type="submit" class="btn git-form-btn py-3">
+            <button type="submit" id="submitButton" class="btn git-form-btn py-3">
               Submit Now
             </button>
-          </div>
+          </form>
         </div>
         </div>
         </div>
