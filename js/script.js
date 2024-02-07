@@ -143,18 +143,29 @@ function validateForm() {
   var mail = document.getElementById("email").value;
   var subject = document.getElementById("subject").value;
 
-  if (phoneNumber.trim() === "") {
-    alert("Please enter a phone number");
+  var validRegex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  var first_three = phoneNumber.substr(0, 4);
+
+  if (
+    phoneNumber.trim() === "" ||
+    first_three !== "+995" ||
+    phoneNumber.length !== 13
+  ) {
+    alert(
+      'Please enter a valid phone number. Phone number must start with "+995" and have the length of 13.'
+    );
     return false;
   }
 
-  if (mail.trim() === "") {
-    alert("Please enter email");
+  if (mail.trim() === "" || !mail.match(validRegex)) {
+    alert("Please enter valid email");
     return false;
   }
 
-  if (subject.trim() === "") {
-    alert("Please enter subject");
+  if (subject.trim() === "" || subject.length < 5) {
+    alert("Please enter valid subject. Subject must have min 5 characters.");
     return false;
   }
 
