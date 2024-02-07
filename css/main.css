@@ -163,7 +163,20 @@ body {
   position: absolute;
 }
 
+.modal-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
 .modal-cl-btn {
+  width: 20%;
   background-color: #fff;
   color: black;
+}
+
+.cl-btn-container {
+  display: flex;
+  justify-content: end;
 }
